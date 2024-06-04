@@ -1,3 +1,4 @@
+# ROR_Mpesa\app\controllers\mpesas_controller.rb
 class MpesasController < ApplicationController
     require 'rest-client' # Include the rest-client gem for making HTTP requests
     rescue_from SocketError, with: :OfflineMode # Rescue from SocketError and handle it with the OfflineMode method
