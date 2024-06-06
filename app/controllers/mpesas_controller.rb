@@ -23,8 +23,8 @@ class MpesasController < ApplicationController
         'PartyB': business_short_code,
         'PhoneNumber': phoneNumber,
         'CallBackURL': "#{ENV["CALLBACK_URL"]}/callback_url", # URL for receiving callback from Mpesa
-        'AccountReference': 'Nahla Naturals MPesa',
-        'TransactionDesc': "Nahla Naturals"
+        'AccountReference': 'Nahla Naturals',
+        'TransactionDesc': "Nahla Naturals Essentials"
       }.to_json
   
       # Headers for the STK push request
