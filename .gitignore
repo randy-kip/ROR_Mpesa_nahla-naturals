@@ -35,4 +35,4 @@
 /config/master.key
 
 # Ignore local env
-# /config/local_env.yml
+/config/local_env.yml
