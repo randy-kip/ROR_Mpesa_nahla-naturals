@@ -137,4 +137,4 @@ post "/polling_payment", to: "mpesas#polling_payment"
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/randy-kip/ROR_Mpesa_nahla-naturals/blob/main/LICENSE.md) file for details.
