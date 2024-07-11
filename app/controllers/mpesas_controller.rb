@@ -3,15 +3,15 @@ class MpesasController < ApplicationController
     require 'rest-client' # Include the rest-client gem for making HTTP requests
     rescue_from SocketError, with: :OfflineMode # Rescue from SocketError and handle it with the OfflineMode method
 
-    mpesa_consumer_key: 'RfqDHYVDbtAyM31p0o1XJoMdtGrQxRpQzxoAGAJ07tublVBk'
-    mpesa_consumer_secret: 'axcsqZ3G0up1bYArba2vmlO7ss4N0tkCsn7KRFHj53GjtZWnEseDIGR8GzcvYh25'
-    mpesa_passkey= 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
-    mpesa_initiator_username: 'nahla-api'
-    mpesa_initiator_security_credential: 'Safaricom999!*!'
-    callback_url: 'https://3199-41-139-192-167.ngrok-free.app'
-    query_url: 'https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query'
-    register_url: 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl'
-    mpesa_shortcode: '174379'
+    mpesa_consumer_key = 'RfqDHYVDbtAyM31p0o1XJoMdtGrQxRpQzxoAGAJ07tublVBk'
+    mpesa_consumer_secret = 'axcsqZ3G0up1bYArba2vmlO7ss4N0tkCsn7KRFHj53GjtZWnEseDIGR8GzcvYh25'
+    mpesa_passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
+    mpesa_initiator_username = 'nahla-api'
+    mpesa_initiator_security_credential = 'Safaricom999!*!'
+    callback_url = 'https://3199-41-139-192-167.ngrok-free.app'
+    query_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpushquery/v1/query'
+    register_url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl'
+    mpesa_shortcode = '174379'
   
     def stkpush
       phoneNumber = params[:phoneNumber] # Get the phone number from the request parameters
