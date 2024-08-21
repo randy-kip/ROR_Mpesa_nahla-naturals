@@ -13,7 +13,8 @@ gem "sprockets-rails"
 # gem "sqlite3", "~> 1.4"
 
 # PostgreSQL gem
-gem 'pg'
+gem 'sqlite3', group: :development
+gem 'pg', '~> 1.2', group: :production
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -56,6 +57,9 @@ gem 'rack-cors'
 
 # Gem for making HTTP requests to external APIs (including Mpesa)
 gem 'rest-client'
+
+# Gem to configure Rails to follow the 12-factor app methodology on Heroku.
+gem 'rails_12factor', group: :production
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
